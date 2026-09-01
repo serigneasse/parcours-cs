@@ -10,15 +10,15 @@
 
 | Jour | Date | Séance | Fait | Note |
 |---|---|---|---|---|
-| J1 | 1 sept. | Installation | ☐ | |
-| J2 | 2 sept. | Épreuve 1 · série A | ☐ | |
+| J1 | 1 sept. | Installation + Épreuve 0 (plancher) | ☐ | |
+| J2 | 2 sept. | Épreuve 1 · séries 0 et A | ☐ | |
 | J3 | 3 sept. | Épreuve 1 · série B | ☐ | |
 | J4 | 4 sept. | Épreuve 1 · série C | ☐ | |
 | J5 | 5 sept. | Épreuve 1 · série D | ☐ | |
 | J6 | 6 sept. | Épreuve 1 · série E | ☐ | |
 | J7 | 7 sept. | Retour épreuve 1 | ☐ | |
-| J8 | 8 sept. | Épreuve 2 · prédiction | ☐ | |
-| J9 | 9 sept. | Épreuve 2 · vérification | ☐ | |
+| J8 | 8 sept. | Épreuve 2 · les 8 extraits | ☐ | |
+| J9 | 9 sept. | Épreuve 2 · vérification empirique | ☐ | |
 | J10 | 10 sept. | Épreuve 3 · domaines A–C | ☐ | |
 | J11 | 11 sept. | Épreuve 3 · domaines D–F | ☐ | |
 | J12 | 12 sept. | Le récit | ☐ | |
@@ -27,12 +27,15 @@
 
 ---
 
-## Épreuve 1 — Les vingt problèmes
+## Épreuve 1 — Les vingt-trois problèmes
 
 Une ligne par problème, remplie **le jour même**, jamais après coup.
 
 | # | Problème | Temps réel | Résolu seul ? | Ce qui m'a bloqué |
 |---|---|---|---|---|
+| 0.1 | Fizz Buzz *(échauffement)* | | | |
+| 0.2 | Running Sum of 1d Array *(échauffement)* | | | |
+| 0.3 | Richest Customer Wealth *(échauffement)* | | | |
 | 1 | Two Sum | | | |
 | 2 | Best Time to Buy and Sell Stock | | | |
 | 3 | Valid Palindrome | | | |
@@ -54,7 +57,7 @@ Une ligne par problème, remplie **le jour même**, jamais après coup.
 | 19 | Move Zeroes | | | |
 | 20 | Majority Element | | | |
 
-**J7 — complexité de mes propres solutions**
+**J7 — complexité de mes 23 solutions**
 
 | # | Ma complexité annoncée | La vraie | Écart |
 |---|---|---|---|
@@ -62,18 +65,32 @@ Une ligne par problème, remplie **le jour même**, jamais après coup.
 
 ---
 
-## Épreuve 2 — Mon propre code
+## Épreuve 2 — Lire la complexité (8 extraits)
 
-| Fonction (fichier:ligne) | Temps prédit | Espace prédit | Temps mesuré | Écart, et pourquoi |
+| # | Ma réponse | Bonne réponse | Juste ? | Ce que j'ai raté |
 |---|---|---|---|---|
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+| 1 | | O(n) | | |
+| 2 | | O(n²) | | |
+| 3 | | O(log n) | | |
+| 4 | | O(n) en espace | | |
+| 5 | | O(n²) | | |
+| 6 | | O(2ⁿ) | | |
+| 7 | | O(n log n) | | |
+| 8 | | O(n × m) | | |
 
-Protocole de mesure : entrées de taille `n`, `10n`, `100n` · `time.perf_counter()` ·
-5 répétitions, médiane · le rapport des temps donne l'ordre réel.
+**J9 — vérification empirique.** Reprends trois extraits ratés, exécute-les sur des entrées de
+taille `n`, `10n`, `100n` (`time.perf_counter()`, 5 répétitions, médiane) et regarde le rapport
+des temps : ×10 → linéaire, ×100 → quadratique, ×3 → logarithmique.
+
+---
+
+## Épreuve 0 — Le plancher (J1)
+
+Score : ___ / 12 · acquis : ___ · avec aide : ___ · non acquis : ___
+
+Les points notés « avec aide » ou « non », listés un par un :
+
+- 
 
 ---
 
@@ -81,7 +98,7 @@ Protocole de mesure : entrées de taille `n`, `10n`, `100n` · `time.perf_counte
 
 *Écrit d'une traite, sans rien consulter, avant de relire les 48 points.*
 
-<!-- Le trajet complet d'une requête sur l'API Filmika, du clic à l'octet qui revient. -->
+<!-- Tout ce qui se passe entre le clic d'un utilisateur sur un lien et l'affichage de la page. -->
 
 ### Ce que j'ai omis en relisant les 48 points
 
