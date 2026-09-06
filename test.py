@@ -1,9 +1,9 @@
-import fibonacci
-import somme
-import longueur
-import puissance
-import palindrome
-import maximum
+from fibonacci import fibonacci
+from somme import somme
+from longueur import longueur
+from puissance import puissance
+from palindrome import palindrome
+from maximum import maximum
 
 
 
@@ -44,7 +44,7 @@ def test_all():
     test_palindrome()
     test_maximum()
 
-def main():
+if __name__ == "__main__":
     test_all()
     print("Tous les tests sont passés.")
     
