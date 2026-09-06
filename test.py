@@ -1,11 +1,5 @@
-from fibonacci import fibonacci
-from somme import somme
-from longueur import longueur
-from puissance import puissance
-from palindrome import palindrome
-from maximum import maximum
-
-
+# test.py
+from recursion import somme, longueur, puissance, palindrome, maximum, fibonacci
 
 def test_somme():
     assert somme([3, 1, 4]) == 8
